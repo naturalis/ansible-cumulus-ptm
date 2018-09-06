@@ -1,4 +1,4 @@
-# Ansible Role: Cumulus monitoring
+# Ansible Role: Cumulus ptm
 
 Used in [network](https://github.com/naturalis/network/) repo.
 
