@@ -51,16 +51,16 @@ None.
 
 ## Example Playbook
 
-- name: Cumulus checks
-  hosts: switches
-  remote_user: cumulus
-  vars:
-    check_ptm: true
-    check_lldp: true
-  gather_facts: no
-  become: true
-  roles:
-    - ansible-role-cumulus-ptm
+
+    - hosts: switches
+      remote_user: cumulus
+      vars:
+        check_ptm: true
+        check_lldp: true
+      gather_facts: no
+      become: true
+      roles:
+        - ansible-role-cumulus-common
 
 ## License
 
