@@ -60,7 +60,7 @@ None.
       gather_facts: no
       become: true
       roles:
-        - ansible-role-cumulus-common
+        - ansible-cumulus-common
 
 ## License
 
