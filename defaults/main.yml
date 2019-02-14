@@ -1,0 +1,7 @@
+---
+check_ptm: false
+check_lldp: false
+ptm:
+  - '"netdw2-spine-a1a":"swp47" -- "netdw2-spine-a1b":"swp47"'
+  - '"netdw2-spine-a1a":"swp48" -- "netdw2-spine-a1b":"swp48"'
+...

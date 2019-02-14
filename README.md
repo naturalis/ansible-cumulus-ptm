@@ -1,13 +1,8 @@
 # Ansible Role: Cumulus ptm
 
-Used in [network](https://github.com/naturalis/network/) repo.
-
-Runnable with:
-```bash
-ansible-playbook playbooks/cumulus_ptm.yml -i environments/prod
-```
-
 This role will configure the ptm daemon and fill in the .dot file for topology checks.
+
+Naturalis uses this role together with a private inventory.
 
 ## Requirements
 
@@ -45,7 +40,7 @@ ptm:
   - '"netdw2-leaf-h1c":"swp1" -- "host04":"swp1"'
 ```
 
-## Dependencies
+## Dependenciestrue
 
 None.
 
