@@ -1,0 +1,10 @@
+---
+- name: Check lldp neighbors
+  command: lldpctl
+  register: lldpctl_output
+  when: check_lldp
+
+- name: Print lldp neighbors
+  debug:
+    msg: "{{ lldpctl_output.stdout }}"
+  when: check_lldp

@@ -1,0 +1,13 @@
+---
+# Setup Prescriptive Topology Manager with correct .dot file
+  - name: configure ptmd topology.dot
+    template:
+      src: templates/topology.j2
+      dest: /etc/ptm.d/topology.dot
+    register: dotfile
+
+  - name: Restart ptmd service
+    service:
+      name: ptmd.service
+      state: restarted
+    when: dotfile.changed

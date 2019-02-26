@@ -46,12 +46,11 @@ None.
 
 ## Example Playbook
 
-
     - hosts: switches
       remote_user: cumulus
       vars:
         check_ptm: true
-        check_lldp: true
+        check_lldp: false
       gather_facts: no
       become: true
       roles:

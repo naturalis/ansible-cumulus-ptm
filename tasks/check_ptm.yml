@@ -1,0 +1,10 @@
+---
+- name: Check PTM status
+  command: ptmctl -lj
+  register: ptmctl_output
+  when: check_ptm
+
+- name: Print PTM table
+  debug:
+    msg: "{{ ptmctl_output.stdout }}"
+  when: check_ptm
